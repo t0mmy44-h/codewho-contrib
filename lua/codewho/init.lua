@@ -46,12 +46,12 @@ local delete_last_path_segment = function(path)
 end
 
 local find_owner_of_file = function(buffer_name)
-  print("finding owner of file: " .. buffer_name)
+  -- print("finding owner of file: " .. buffer_name)
   local codeowners = parse_codeowners()
   local path = buffer_name
 
   while (path ~= nil) do
-    print("path is: " .. path)
+    -- print("path is: " .. path)
     local owner = codeowners[path] or codeowners[path .. "/"]
     if owner then
       return owner
