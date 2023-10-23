@@ -1,4 +1,4 @@
-print("loading codeowners plugin")
+-- print("loading codeowners plugin")
 
 local M = {}
 M.codeowners_table = {}
